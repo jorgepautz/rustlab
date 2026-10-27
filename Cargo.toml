@@ -4,3 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+# Para instalar as dependências abaixo via terminal, execute:
+# cargo add axum
+# cargo add tokio --features full
+# cargo add serde --features derive
+axum = "0.7"                                     # Framework Web para criar as rotas HTTP
+tokio = { version = "1.0", features = ["full"] } # Runtime assíncrono para rodar o servidor
+serde = { version = "1.0", features = ["derive"] } # Biblioteca para serializar/converter dados em JSON
